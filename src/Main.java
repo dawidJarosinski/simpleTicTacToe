@@ -65,22 +65,22 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        int pozycja;
+        int position;
         System.out.println("Player X starts, type number from 1 to 9");
         resetBoard();
         printBoard();
         for(int i = 0; i < 9; i++)
         {
-            pozycja = input.nextInt();
-            if(Board[pozycja - 1] == null)
+            position = input.nextInt();
+            if(Board[position - 1] == null)
             {
                 if(i%2 == 0)
                 {
-                    Board[pozycja - 1] = "X";
+                    Board[position - 1] = "X";
                 }
                 else if(i%2 == 1)
                 {
-                    Board[pozycja - 1] = "O";
+                    Board[position - 1] = "O";
                 }
             }
             else
